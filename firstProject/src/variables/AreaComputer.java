@@ -1,7 +1,8 @@
 package variables;
 
-public class areaComputer {
-	public static void main (String[] args) {		
+public class AreaComputer {
+	public static void main (String[] args) {
+		
 		double radius;
 		double area;
 		
