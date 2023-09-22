@@ -1,0 +1,79 @@
+package mathproblems;
+
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.List;
+
+public class newChallenge {
+	
+	List<Product> products = new ArrayList<>();
+	
+	public void setupProduct() {
+		
+		Product coffee = new Product();
+		coffee.setName("Coffee");
+		coffee.setPrice(5.44);
+		products.add(coffee);
+		
+		Product tea = new Product();
+		tea.setName("Tea");
+		tea.setPrice(4.33);
+		products.add(tea);
+		
+		Product cookie = new Product();
+		cookie.setName("Cookie");
+		cookie.setPrice(6.77);
+		products.add(cookie);
+		
+		printAllProducts()
+		
+	}
+
+	private void printProduct(Product product) {
+		System.out.println("Product Name: " + 
+		product.getName() + " \tPrice: " + 
+		product.getPrice());
+		
+	}
+
+	public void printAllProducts() {
+		for (Product product : products) {
+			System.out.println(products);
+		}
+	}
+
+	public static void main(String[] args) {
+		newChallenge cf = new newChallenge();	
+		cf.setupProduct();
+		
+		
+		// TODO Auto-generated method stub
+		double coffee = 5.43d;
+		double tea = 4.33d;
+		double cookie = 6.7d;
+		
+		double subTotal = 0;
+		double salesTax = 0;
+		
+		// 3 items of the first product
+		subTotal = coffee * 3;
+		
+		//4 items of second product
+		subTotal = subTotal + (tea * 4);
+		
+		//2 items of third product
+		subTotal = subTotal + (cookie * 2);
+		
+		DecimalFormat df = new DecimalFormat("#,###.00");
+		
+		//System.out.println("subTotal:\t " + df.format(subTotal));
+		
+		salesTax = subTotal * 0.09;
+		
+		//System.out.println("Sales Tax:\t " + df.format(salesTax));
+		
+		//System.out.println("Total:\t\t " + df.format(subTotal + salesTax));
+		
+	}
+
+}
