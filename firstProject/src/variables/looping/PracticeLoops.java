@@ -6,15 +6,13 @@ public class PracticeLoops {
 		// TODO Auto-generated method stub
 		double tuition = 10000;
 		double goal = 20000;
-		
+
 		int year = 0;
-		
+
 		while (tuition < goal) {
 			tuition = tuition * 1.07;
 			year = year + 1;
-			System.out.println(tuition);
 		}
 		System.out.print(year);
 	}
-
 }

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value=""/>
+		<item key="selection" value="for (int i = 0; i &lt; 10; i++) {"/>
 		<list key="findhistory">
+			<item value="for (int i = 0; i &lt; 10; i++) {"/>
 			<item value="//System.out.println(&quot;Enter First Name: &quot;);"/>
 		</list>
 	</section>
