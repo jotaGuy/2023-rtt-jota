@@ -33,13 +33,18 @@ public class Calculator {
 		input.nextLine();
 		
 		// asking for a operator
-		System.out.print("Enter the type of operation you want to perform (+, -, *, /): ");		
+		System.out.print("Enter the type of operation you want to perform (+, -, *, /): ");
+		
 		String[] operand = {"+", "-", "*", "/"};
 		
+		System.out.print(operand);
+		
+		while(!input.hasNextInt()) {
+		    input.next();
+		    System.out.println("Please a number: ");
+		}
 		
 		String operation = input.next();
-		
-		
 		
 		int result = c.calculate(firstNumber, secondNumber, operation);
 		

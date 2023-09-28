@@ -22,8 +22,6 @@ public class Calculator {
 		// asking for second number	
 		System.out.println("Please enter second number: ");
 		
-		
-		// if input not an integer ask again
 		while(!input.hasNextInt()) {
 		    input.next();
 		    System.out.println("Please a number: ");
@@ -32,14 +30,9 @@ public class Calculator {
 		int secondNumber = input.nextInt();
 		input.nextLine();
 		
-		// asking for a operator
-		System.out.print("Enter the type of operation you want to perform (+, -, *, /): ");		
-		String[] operand = {"+", "-", "*", "/"};
-		
+		System.out.print("Enter the type of operation you want to perform (+, -, *, /): ");
 		
 		String operation = input.next();
-		
-		
 		
 		int result = c.calculate(firstNumber, secondNumber, operation);
 		
