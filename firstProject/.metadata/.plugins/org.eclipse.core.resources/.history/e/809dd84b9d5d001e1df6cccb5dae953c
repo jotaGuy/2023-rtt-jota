@@ -1,0 +1,26 @@
+package PP_303_8_1;
+
+import java.util.Scanner;
+
+public class Calculator {
+	public static void main(String[] args) {
+		Calculator c = new Calculator();
+		c.menu();
+	}
+
+	public void menu() {
+		
+		Scanner input = new Scanner (System.in);
+		System.out.println("Please enter first number");
+		
+		int firstNumber = input.nextInt();
+		
+		System.out.println("Please enter second number");
+		
+		int secondNumber = input.nextInt();
+		
+		System.out.println(firstNumber);
+		System.out.println(secondNumber);
+	}
+
+}
