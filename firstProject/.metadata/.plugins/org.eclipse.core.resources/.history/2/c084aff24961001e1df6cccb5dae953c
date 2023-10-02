@@ -21,7 +21,7 @@ public class ClassWork {
 		int total2 = 0;
 
 		for (int i = 1; i < 100; i++) {
-			total2 += i % 2;
+			total += i % 2;
 			System.out.println(total);
 		}
 		System.out.println(total + " Done with ForLoop");
@@ -30,7 +30,7 @@ public class ClassWork {
 				int total3 = 0;
 				
 				for (int i = 1; i < 100; i++) {
-					total3 += i/2;
+					total += i/2;
 					System.out.println(total);
 				}
 				System.out.println(total + " Done with ForLoop");
