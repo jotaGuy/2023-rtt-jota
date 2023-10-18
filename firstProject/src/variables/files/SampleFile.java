@@ -18,7 +18,7 @@ public class SampleFile {
 		// . means the current directory
 		// .. mean the parent directory
 
-		File dir = new File("C:\\Users\\jaybaez\\Desktop\\java-class");
+		File dir = new File("C//Users//jaybaez//Desktop//java-class");
 		System.out.println(dir.getAbsolutePath());
 
 		File parent = new File("..//..//..//..//..//..//..");
@@ -46,5 +46,7 @@ public class SampleFile {
 			System.out.println("==================");
 		}
 	}
+	
+	
 
 }
