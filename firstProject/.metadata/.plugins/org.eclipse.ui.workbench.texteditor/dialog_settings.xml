@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="Integer firstPlayerScore = stringMap.get(&quot;Michael Jordan&quot;);"/>
+		<item key="selection" value="public static void main(String[] args) {"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="public static void main(String[] args) {"/>
 			<item value="Integer firstPlayerScore = stringMap.get(&quot;Michael Jordan&quot;);"/>
 			<item value="//public void calcualteArea() {"/>
 			<item value="for (int i = 0; i &lt; 10; i++) {"/>
 			<item value="//System.out.println(&quot;Enter First Name: &quot;);"/>
 		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="792"/>
+		<item key="DIALOG_Y_ORIGIN" value="259"/>
+		<item key="DIALOG_WIDTH" value="336"/>
+		<item key="DIALOG_HEIGHT" value="402"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 	</section>
 </section>

@@ -20,8 +20,8 @@
 	<section name="JavaElementSearchActions">
 	</section>
 	<section name="JavadocWizardDialog">
-		<item key="DIALOG_X_ORIGIN" value="0"/>
-		<item key="DIALOG_Y_ORIGIN" value="55"/>
+		<item key="DIALOG_X_ORIGIN" value="-56"/>
+		<item key="DIALOG_Y_ORIGIN" value="273"/>
 		<item key="DIALOG_WIDTH" value="1066"/>
 		<item key="DIALOG_HEIGHT" value="528"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
@@ -43,7 +43,23 @@
 		<item key="nonavbar" value="false"/>
 		<item key="openinbrowser" value="false"/>
 		<item key="source" value="1.3"/>
+		<item key="destdir" value="/Users/jaybaez/Desktop/java-class/database/src/main/java"/>
 		<section name="projects">
+			<section name="newthing">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/jaybaez/Desktop/java-class/firstProject/newthing/doc"/>
+				<item key="antpath" value="/Users/jaybaez/Desktop/java-class/firstProject/newthing/javadoc.xml"/>
+			</section>
+			<section name="variables">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/jaybaez/Desktop/java-class/firstProject/src/variables/doc"/>
+				<item key="antpath" value="/Users/jaybaez/Desktop/java-class/firstProject/src/variables/javadoc.xml"/>
+			</section>
+			<section name="databse">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/jaybaez/Desktop/java-class/database/src/main/java"/>
+				<item key="antpath" value="/Users/jaybaez/Desktop/java-class/database/javadoc.xml"/>
+			</section>
 		</section>
 	</section>
 	<section name="NewPackageWizardPage">
