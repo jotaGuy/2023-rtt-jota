@@ -1,26 +1,25 @@
-package database.entity;
+package com.perscholas.caseStudy.database.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+
 @Getter
 @Setter
 @Entity
-@Table(name="messages")
-public class Messages {
+@Table(name = "users")
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
 
-    // sender id
+    @Column(name = "email")
+    private String email;
 
-    // receiver id
-
-    // message
-
-    // create at: date or ts
+    @Column(name = "password")
+    private String password;
 
 }
