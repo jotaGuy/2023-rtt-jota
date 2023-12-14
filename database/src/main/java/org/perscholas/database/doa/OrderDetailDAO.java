@@ -1,6 +1,8 @@
 package org.perscholas.database.doa;
 
 import java.util.List;
+
+import javax.persistence.NoResultException;
 import javax.persistence.TypedQuery;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -48,6 +50,24 @@ public class OrderDetailDAO {
 //		}
 		session.saveOrUpdate(save);
 		t.commit();
+	}
+	
+	public OrderDetail findByOrderIdAndProductId(Integer orderId, Integer productId) {
+		SessionFactory factory = new Configuration().configure().buildSessionFactory();
+		Session session = factory.openSession();
+
+		String hql = "FROM OrderDetail od WHERE od.order.id = :orderId AND od.product.id = :productId";
+
+		TypedQuery<OrderDetail> query = session.createQuery(hql, OrderDetail.class);
+		query.setParameter("orderId", orderId);
+		query.setParameter("productId", productId);
+
+		try {
+			OrderDetail result = query.getSingleResult();
+			return result;
+		} catch (NoResultException nre) {
+			return null;
+		}
 	}
 }
 
